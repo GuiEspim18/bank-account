@@ -6,9 +6,12 @@ public class TestAccount {
         Account account = new Account(2002, 1803, 50);
 
         account.deposit(50);
+        account.setNum(2002);
+        account.setBranch(1803);
 
-        System.out.println(account.branch);
-        System.out.println(account.num);
+
+        System.out.println(account.getBranch());
+        System.out.println(account.getNUm());
         System.out.println(account.getBalance());
 
         account.withdrawal(30);
