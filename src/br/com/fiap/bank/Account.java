@@ -26,6 +26,10 @@ public class Account implements Serializable {
         }
     */
 
+    public Account() {
+
+    }
+
     public Account (int branch, int num, double balance) {
         this.branch = branch;
         this.num = num;
@@ -66,5 +70,9 @@ public class Account implements Serializable {
 
     public double getBalance() {
         return this.balance;
+    }
+
+    public void setBalance(double value) {
+        this.balance = value;
     }
 }
