@@ -3,8 +3,9 @@ package br.com.fiap.bank.account;
 import br.com.fiap.bank.Account;
 
 import java.io.Serial;
+import java.io.Serializable;
 
-public class CurrentAccount extends Account {
+public class CurrentAccount extends Account implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 3L;
